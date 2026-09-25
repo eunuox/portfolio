@@ -19,22 +19,28 @@
 
     @php
 
-        $currentPage = $page ?? 'about';
-        $titles = [
-            'about' => 'Portfolio',
-            'resume' => 'Resume',
-            'projects' => 'Projects',
-            'blog' => 'Blog',
-            'contact' => 'Contact',
-        ];
-        $ogDescriptions = [
-            'about' => 'Official Portfolio Website of Prasid Mandal - Full-Stack Web Developer - (Also Known as @' . config('app.name') . ').',
-            'resume' => 'Explore the Resume: cv@' . config('app.name') . ' - A Quick Look at My Education, Experience, and Skills.',
-            'projects' => 'Browse the Projects - A Quick Overview of My Work, Tools, and Real-World Applications.',
-            'blog' => 'Read the Blogs Shared by ' . config('app.name') . ' on Social Media, Development and Tech.',
-            'contact' => 'Get in Touch with ' . config('app.name') . ' - for Collaborations, Projects, or Queries.',
-        ];
-        $homeTitle = $titles[$currentPage] . ' | @' . config('app.name');
+    $currentPage = $page ?? 'about';
+    $titles = [
+    'about' => 'Portfolio',
+    'resume' => 'Resume',
+    'projects' => 'Projects',
+    'blog' => 'Blog',
+    'contact' => 'Contact',
+    ];
+    $ogDescriptions = [
+    'about' =>
+    'Official Portfolio Website of Prasid Mandal - Full-Stack Web Developer - (Also Known as @' .
+    config('app.name') .
+    ').',
+    'resume' =>
+    'Explore the Resume: cv@' .
+    config('app.name') .
+    ' - A Quick Look at My Education, Experience, and Skills.',
+    'projects' => 'Browse the Projects - A Quick Overview of My Work, Tools, and Real-World Applications.',
+    'blog' => 'Read the Blogs Shared by ' . config('app.name') . ' on Social Media, Development and Tech.',
+    'contact' => 'Get in Touch with ' . config('app.name') . ' - for Collaborations, Projects, or Queries.',
+    ];
+    $homeTitle = $titles[$currentPage] . ' | @' . config('app.name');
 
     @endphp
 
@@ -66,8 +72,8 @@
     <meta name="twitter:description" content="{{ $ogDescriptions[$currentPage] }}">
     <meta name="twitter:image" content="{{ asset('assets/images/user/xodivorce.jpg') }}">
     <meta name="twitter:url" content="{{ url()->current() }}">
-    <meta name="twitter:creator" content="@hey_xodivorce">
-    <meta name="twitter:site" content="@hey_xodivorce">
+    <meta name="twitter:creator" content="@eunuo_x">
+    <meta name="twitter:site" content="@eunuo_x">
 
     <!--
     - #Canonical URL
@@ -121,6 +127,46 @@
   -->
 
     @include('components.ui.preloader')
+
+
+    <!--
+    - #Brand Transition Announcement
+  -->
+
+    <div id="brand-notification">
+        <div class="brand-announcement-content">
+
+            <div class="brand-announcement-row brand-row-one">
+                <span class="brand-announcement-label">
+                    A new chapter
+                </span>
+
+                <span class="brand-arrow">⇋</span>
+
+                <span class="brand-announcement-transition">
+                    <span class="highlight-text-white">@xodivorce</span>
+                    <span>is becoming</span>
+                    <span class="highlight-text-cyan">@eunuo_x</span>
+                </span>
+
+                <span class="brand-arrow brand-divider">|</span>
+            </div>
+
+            <div class="brand-announcement-row brand-row-two">
+                <span class="brand-announcement-domain">
+                    <span>Moving to</span>
+                    <span class="highlight-text-cyan">www.eunuox.com</span>
+                </span>
+
+                <span class="brand-arrow">⇋</span>
+
+                <span class="brand-announcement-date">
+                    From December 13, 2026
+                </span>
+            </div>
+
+        </div>
+    </div>
 
     <!--
     - #Main
@@ -246,40 +292,42 @@
   -->
 
                 <ul class="social-list">
+
                     <li class="social-item">
-                        <a href="https://www.youtube.com/@xodivorce" target="_blank" rel="noopener noreferrer"
-                            class="social-link">
+                        <button type="button" class="social-link"
+                            onclick="window.open('https://www.youtube.com/@eunuo_x', '_blank', 'noopener,noreferrer')">
                             <ion-icon name="logo-youtube"></ion-icon>
-                        </a>
+                        </button>
                     </li>
 
                     <li class="social-item">
-                        <a href="https://www.instagram.com/xodivorce" target="_blank" rel="noopener noreferrer"
-                            class="social-link">
+                        <button type="button" class="social-link"
+                            onclick="window.open('https://www.instagram.com/eunuo_x', '_blank', 'noopener,noreferrer')">
                             <ion-icon name="logo-instagram"></ion-icon>
-                        </a>
+                        </button>
                     </li>
 
                     <li class="social-item">
-                        <a href="https://github.com/xodivorce" target="_blank" rel="noopener noreferrer"
-                            class="social-link">
+                        <button type="button" class="social-link"
+                            onclick="window.open('https://github.com/eunuox', '_blank', 'noopener,noreferrer')">
                             <ion-icon name="logo-github"></ion-icon>
-                        </a>
+                        </button>
                     </li>
 
                     <li class="social-item">
-                        <a href="https://www.pinterest.com/xodivorc3" target="_blank" rel="noopener noreferrer"
-                            class="social-link">
+                        <button type="button" class="social-link"
+                            onclick="window.open('https://www.pinterest.com/eunuo_x', '_blank', 'noopener,noreferrer')">
                             <ion-icon name="logo-pinterest"></ion-icon>
-                        </a>
+                        </button>
                     </li>
 
                     <li class="social-item">
-                        <a href="https://www.linkedin.com/in/xodivorce" target="_blank" rel="noopener noreferrer"
-                            class="social-link">
+                        <button type="button" class="social-link"
+                            onclick="window.open('https://www.linkedin.com/in/eunuox', '_blank', 'noopener,noreferrer')">
                             <ion-icon name="logo-linkedin"></ion-icon>
-                        </a>
+                        </button>
                     </li>
+
                 </ul>
 
             </div>
@@ -348,41 +396,67 @@
 
                 <article class="portfolio {{ $page === 'about' ? 'active' : '' }}">
 
+
                     <header>
                         <h2 class="h2 article-title">Portfolio</h2>
                     </header>
 
                     @php
-                        use Carbon\Carbon;
+                    use Carbon\Carbon;
 
-                        $birthDate = Carbon::parse('2006-01-20');
-                        $age = $birthDate->age;
+                    $newUsername = 'eunuox';
+                    $birthDate = Carbon::parse('2006-01-20');
+                    $age = $birthDate->age;
 
-                        $experienceStartYear = 2023;
-                        $experienceYears = now()->year - $experienceStartYear;
+                    $experienceStartYear = 2023;
+                    $experienceYears = now()->year - $experienceStartYear;
                     @endphp
 
                     <p>
-                        Namaste! I'm Prasid,
-                        better known as {{ '@' . (config('app.name')) }} - a {{ $age }}-year-old Full Stack Web
-                        Developer, Technology Enthusiast,
+                        Namaste! I'm Prasid Mandal (call me {{ '@' . $newUsername }}),
+                        previously known as {{ '@' . config('app.name') }} —
+                        a {{ $age }}-year-old Full Stack Web Developer and Technology Enthusiast
+                        with {{ $experienceYears }}+ years of experience building modern software applications.
+                    </p>
+                    <p>
+                        I previously served as a
                         <button type="button" class="npx-cli"
-                            onclick="window.open('https://geministudentambassador.com/', '_blank', 'noopener,noreferrer')">Google
-                            Student Ambassador '26</button> at
+                            onclick="window.open('https://geministudentambassador.com/', '_blank', 'noopener,noreferrer')">
+                            Google Student Ambassador '26
+                        </button>
+                        and
                         <button type="button" class="npx-cli"
-                            onclick="window.open('https://camelliait.ac.in/', '_blank', 'noopener,noreferrer')">Camellia
-                            Institute of Technology</button>,
-                        and an Open Source Contributor at <button type="button" class="npx-cli"
-                            onclick="window.open('https://gssoc.girlscript.org/', '_blank', 'noopener,noreferrer')">GSSoC
-                            '26</button>.
+                            onclick="window.open('https://www.geeksforgeeks.org/', '_blank', 'noopener,noreferrer')">
+                            GeeksforGeeks Campus Ambassador '25
+                        </button>
+                        during the fellow years at the institution
+                        <button type="button" class="npx-cli"
+                            onclick="window.open('https://camelliait.ac.in/', '_blank', 'noopener,noreferrer')">
+                            Camellia Institute of Technology
+                        </button>,
+                        and was an Open Source Contributor at
+                        <button type="button" class="npx-cli"
+                            onclick="window.open('https://gssoc.girlscript.org/', '_blank', 'noopener,noreferrer')">
+                            GSSoC '26
+                        </button>.
+                        While, working with technologies including Laravel, Tailwind CSS, MySQL, Docker, and modern web frameworks,
+                        with the focus on polished, practical, and thoughtfully crafted experiences.
                     </p>
 
                     <p>
-                        For over 3+ years, I've been building modern web applications, exploring AI-powered solutions,
-                        and working with modern technologies and frameworks including Laravel, Tailwind CSS, MySQL and
-                        Docker
-                        - adding handcrafted touches to every pixel I've placed. Building things is what I do, exploring
-                        them is up to you. Run:
+                        Creator of
+                        <button type="button" class="npx-cli"
+                            onclick="window.open('https://www.eunuox.com', '_blank', 'noopener,noreferrer')">
+                            www.eunuox.com
+                        </button>
+                        (12 stars), and
+                        <button type="button" class="npx-cli"
+                            onclick="window.open('https://noticed.eunuox.com', '_blank', 'noopener,noreferrer')">
+                            Noticed
+                        </button>
+                        (50k+ downloads) — a project built to solve a problem I really wanted to see solved. Building things is what I do, exploring
+                        them is up to you.
+                        Run:
                         <button type="button" class="npx-cli"
                             onclick="navigator.clipboard.writeText(@js('npx ' . config('app.name'))).then(() => { this.textContent = 'Copied!'; setTimeout(() => this.textContent = '$ npx {{ config('app.name') }}', 1200); });">
                             $ npx {{ config('app.name') }}
@@ -471,8 +545,8 @@
 
                     </section>
 
-                    <!-- 
-        - #Words by them 
+                    <!--
+        - #Words by them
         -->
                     <section class="words_by_them">
 
@@ -480,37 +554,38 @@
 
                         <ul class="words_by_them-list has-scrollbar">
 
-                            @foreach($testimonials as $t)
-                                <li class="words_by_them-item" data-words_by_them-item data-name="{{ $t->name }}"
-                                    data-message="{{ e($t->message) }}" data-date="{{ $t->date }}">
+                            @foreach ($testimonials as $t)
+                            <li class="words_by_them-item" data-words_by_them-item
+                                data-name="{{ $t->name }}" data-message="{{ e($t->message) }}"
+                                data-date="{{ $t->date }}">
 
-                                    <div class="content-card" data-model-trigger>
-                                        <figure class="words_by_them-avatar-box">
-                                            <img src="{{ asset($t->avatar) }}" alt="{{ $t->name }}" width="60"
-                                                data-words_by_them-avatar>
-                                        </figure>
+                                <div class="content-card" data-model-trigger>
+                                    <figure class="words_by_them-avatar-box">
+                                        <img src="{{ asset($t->avatar) }}" alt="{{ $t->name }}"
+                                            width="60" data-words_by_them-avatar>
+                                    </figure>
 
-                                        <h4 class="h4 words_by_them-item-title" data-words_by_them-title>
-                                            {{ $t->name }}
-                                        </h4>
+                                    <h4 class="h4 words_by_them-item-title" data-words_by_them-title>
+                                        {{ $t->name }}
+                                    </h4>
 
-                                        <time datetime="{{ $t->date }}">
-                                            {{ \Carbon\Carbon::parse($t->date)->format('d F, Y') }}
-                                        </time>
+                                    <time datetime="{{ $t->date }}">
+                                        {{ \Carbon\Carbon::parse($t->date)->format('d F, Y') }}
+                                    </time>
 
-                                        <div class="words_by_them-text" data-words_by_them-text>
-                                            <p>{{ $t->message }}</p>
-                                        </div>
+                                    <div class="words_by_them-text" data-words_by_them-text>
+                                        <p>{{ $t->message }}</p>
                                     </div>
-                                </li>
+                                </div>
+                            </li>
                             @endforeach
 
                         </ul>
 
                     </section>
 
-                    <!-- 
-        - #Words by Them Model 
+                    <!--
+        - #Words by Them Model
     -->
 
                     <div class="model-container" data-model-container>
@@ -556,7 +631,8 @@
 
                             <li class="clients-item">
                                 <a>
-                                    <img src="{{ asset('assets/images/brands/autosquare.png') }}" alt="Autosquare logo">
+                                    <img src="{{ asset('assets/images/brands/autosquare.png') }}"
+                                        alt="Autosquare logo">
                                 </a>
                             </li>
 
@@ -599,14 +675,14 @@
 
                         <ol class="timeline-list">
 
-                            @foreach($educations as $edu)
-                                <li class="timeline-item">
-                                    <h4 class="h4 timeline-item-title">{{ $edu->title }}</h4>
-                                    <span>{{ $edu->start_year }} — {{ $edu->end_year }}</span>
-                                    <p class="timeline-text">
-                                        {!! $edu->description !!}
-                                    </p>
-                                </li>
+                            @foreach ($educations as $edu)
+                            <li class="timeline-item">
+                                <h4 class="h4 timeline-item-title">{{ $edu->title }}</h4>
+                                <span>{{ $edu->start_year }} — {{ $edu->end_year }}</span>
+                                <p class="timeline-text">
+                                    {!! $edu->description !!}
+                                </p>
+                            </li>
                             @endforeach
 
                         </ol>
@@ -624,18 +700,18 @@
 
                         <ol class="timeline-list">
 
-                            @foreach($experience as $exp)
-                                <li class="timeline-item">
-                                    <h4 class="h4 timeline-item-title">{{ $exp->title }}</h4>
+                            @foreach ($experience as $exp)
+                            <li class="timeline-item">
+                                <h4 class="h4 timeline-item-title">{{ $exp->title }}</h4>
 
-                                    <span>
-                                        {{ $exp->start_year }} — {{ $exp->end_year ?? 'Present' }}
-                                    </span>
+                                <span>
+                                    {{ $exp->start_year }} — {{ $exp->end_year ?? 'Present' }}
+                                </span>
 
-                                    <p class="timeline-text">
-                                        {!! $exp->description !!}
-                                    </p>
-                                </li>
+                                <p class="timeline-text">
+                                    {!! $exp->description !!}
+                                </p>
+                            </li>
                             @endforeach
 
                         </ol>
@@ -652,17 +728,17 @@
 
                         <ul class="skills-list content-card">
 
-                            @foreach($skills as $skill)
-                                <li class="skills-item">
-                                    <div class="title-wrapper">
-                                        <h5 class="h5">{{ $skill->name }}</h5>
-                                        <data value="{{ $skill->percentage }}">{{ $skill->percentage }}%</data>
+                            @foreach ($skills as $skill)
+                            <li class="skills-item">
+                                <div class="title-wrapper">
+                                    <h5 class="h5">{{ $skill->name }}</h5>
+                                    <data value="{{ $skill->percentage }}">{{ $skill->percentage }}%</data>
+                                </div>
+                                <div class="skill-progress-bg">
+                                    <div class="skill-progress-fill" style="width: {{ $skill->percentage }}%;">
                                     </div>
-                                    <div class="skill-progress-bg">
-                                        <div class="skill-progress-fill" style="width: {{ $skill->percentage }}%;">
-                                        </div>
-                                    </div>
-                                </li>
+                                </div>
+                            </li>
                             @endforeach
 
                         </ul>
@@ -728,7 +804,7 @@
 
                         </div>
 
-                        <!-- 
+                        <!--
                         - #For Isuues, Deploy Comeing-soon
 
                         <div class="container">
@@ -741,33 +817,31 @@
                         <ul class="project-list">
 
                             @foreach ($projects as $project)
+                            <li class="project-item active" data-filter-item
+                                data-category="{{ strtolower($project->category) }}">
 
-                                <li class="project-item active" data-filter-item
-                                    data-category="{{ strtolower($project->category) }}">
+                                <a href="{{ $project->link }}" target="_blank" rel="noopener noreferrer"
+                                    style="display:block;">
 
-                                    <a href="{{ $project->link }}" target="_blank" rel="noopener noreferrer"
-                                        style="display:block;">
+                                    <figure class="project-img">
+                                        <div class="project-item-icon-box">
+                                            <ion-icon name="eye-outline"></ion-icon>
+                                        </div>
 
-                                        <figure class="project-img">
-                                            <div class="project-item-icon-box">
-                                                <ion-icon name="eye-outline"></ion-icon>
-                                            </div>
+                                        <img src="{{ asset($project->image) }}" alt="{{ $project->name }}"
+                                            loading="lazy">
+                                    </figure>
 
-                                            <img src="{{ asset($project->image) }}" alt="{{ $project->name }}"
-                                                loading="lazy">
-                                        </figure>
+                                    <h3 class="project-title">
+                                        {{ $project->name }}
+                                    </h3>
 
-                                        <h3 class="project-title">
-                                            {{ $project->name }}
-                                        </h3>
+                                    <p class="project-category">
+                                        {{ $project->category }}
+                                    </p>
 
-                                        <p class="project-category">
-                                            {{ $project->category }}
-                                        </p>
-
-                                    </a>
-                                </li>
-
+                                </a>
+                            </li>
                             @endforeach
 
                         </ul>
@@ -781,7 +855,7 @@
         - #Blog
       -->
 
-                <!-- 
+                <!--
         - #For Isuues, Deploy Comeing-soon
           
         <div class="container">
@@ -802,83 +876,76 @@
                         <ul class="blog-posts-list">
 
                             @foreach ($blogs as $row)
+                            <li class="blog-post-item">
 
-                                <li class="blog-post-item">
+                                <a href="{{ $row['post_link'] }}" target="_blank" rel="noopener noreferrer"
+                                    style="display:block;">
 
-                                    <a href="{{ $row['post_link'] }}" target="_blank" rel="noopener noreferrer"
-                                        style="display:block;">
+                                    <figure class="blog-banner-box">
 
-                                        <figure class="blog-banner-box">
+                                        {{-- Instagram --}}
+                                        @if ($row['platform'] === 'Instagram')
+                                        <blockquote class="instagram-media"
+                                            data-instgrm-permalink="{{ $row['post_link'] }}"
+                                            data-instgrm-version="14" style="width:100%;">
+                                        </blockquote>
+                                        <script async src="//www.instagram.com/embed.js"></script>
 
-                                            {{-- Instagram --}}
-                                            @if ($row['platform'] === 'Instagram')
+                                        {{-- Facebook --}}
+                                        @elseif ($row['platform'] === 'Facebook' && !empty($row['post_iframe']))
+                                        <iframe src="{{ $row['post_iframe'] }}" width="100%"
+                                            height="365" style="border:none;overflow:hidden;"
+                                            scrolling="no" frameborder="0" allowfullscreen="true">
+                                        </iframe>
 
-                                                <blockquote class="instagram-media"
-                                                    data-instgrm-permalink="{{ $row['post_link'] }}" data-instgrm-version="14"
-                                                    style="width:100%;">
-                                                </blockquote>
-                                                <script async src="//www.instagram.com/embed.js"></script>
+                                        {{-- Pinterest --}}
+                                        @elseif ($row['platform'] === 'Pinterest' && !empty($row['post_iframe']))
+                                        <iframe src="{{ $row['post_iframe'] }}" height="365"
+                                            width="100%" frameborder="0" scrolling="no"></iframe>
 
-                                                {{-- Facebook --}}
-                                            @elseif ($row['platform'] === 'Facebook' && !empty($row['post_iframe']))
+                                        {{-- Default --}}
+                                        @else
+                                        <img src="{{ $row['post_image'] }}"
+                                            alt="{{ $row['post_image_alt'] }}" loading="lazy">
+                                        @endif
 
-                                                <iframe src="{{ $row['post_iframe'] }}" width="100%" height="365"
-                                                    style="border:none;overflow:hidden;" scrolling="no" frameborder="0"
-                                                    allowfullscreen="true">
-                                                </iframe>
+                                    </figure>
 
-                                                {{-- Pinterest --}}
-                                            @elseif ($row['platform'] === 'Pinterest' && !empty($row['post_iframe']))
+                                    <div class="blog-content">
+                                        <div class="blog-meta">
 
-                                                <iframe src="{{ $row['post_iframe'] }}" height="365" width="100%"
-                                                    frameborder="0" scrolling="no"></iframe>
-
-                                                {{-- Default --}}
-                                            @else
-
-                                                <img src="{{ $row['post_image'] }}" alt="{{ $row['post_image_alt'] }}"
-                                                    loading="lazy">
-
-                                            @endif
-
-                                        </figure>
-
-                                        <div class="blog-content">
-                                            <div class="blog-meta">
-
-                                                <p class="blog-category">
-                                                    {{ $row['post_category'] }}
-                                                </p>
-
-                                                <span class="dot"></span>
-
-                                                <time datetime="{{ $row['post_date'] }}">
-                                                    {{ \Carbon\Carbon::parse($row['post_date'])->format('M d, Y') }}
-                                                </time>
-
-                                            </div>
-
-                                            <h3 class="h3 blog-item-title">
-                                                {{ $row['post_title'] }}
-                                            </h3>
-
-                                            <p class="blog-text">
-                                                {!! $row['post_text'] !!}
+                                            <p class="blog-category">
+                                                {{ $row['post_category'] }}
                                             </p>
+
+                                            <span class="dot"></span>
+
+                                            <time datetime="{{ $row['post_date'] }}">
+                                                {{ \Carbon\Carbon::parse($row['post_date'])->format('M d, Y') }}
+                                            </time>
 
                                         </div>
 
-                                    </a>
+                                        <h3 class="h3 blog-item-title">
+                                            {{ $row['post_title'] }}
+                                        </h3>
 
-                                </li>
+                                        <p class="blog-text">
+                                            {!! $row['post_text'] !!}
+                                        </p>
 
+                                    </div>
+
+                                </a>
+
+                            </li>
                             @endforeach
 
                             <!--
                 - #Temp For META Not Resolved Iframe
             -->
 
-                            <!-- 
+                            <!--
                         <div id="mobile-notification" class="notification">
                             <span class="close-btn" onclick="closeNotification()">&#10005;</span>
 
@@ -887,7 +954,7 @@
                                     class="highlight-text">meta</span>. For the best experience,<br> switch to the
                                 <span class="highlight-text">desktop mode</span>. Thanks for your understanding.
                             </p>
-                        </div> 
+                        </div>
                     -->
 
                         </ul>
@@ -922,17 +989,16 @@
                             @csrf
 
                             <div class="input-wrapper">
-                                <input type="text" name="fullname" class="form-input" placeholder="Your Full Name"
-                                    required data-form-input>
-                                <input type="email" name="email" class="form-input" placeholder="Your Email address"
-                                    required data-form-input>
+                                <input type="text" name="fullname" class="form-input"
+                                    placeholder="Your Full Name" required data-form-input>
+                                <input type="email" name="email" class="form-input"
+                                    placeholder="Your Email address" required data-form-input>
                             </div>
 
-                            <textarea name="message" class="form-input" placeholder="Your Message" required
-                                data-form-input></textarea>
+                            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
 
-                            <!-- 
-                            - #Status Message 
+                            <!--
+                            - #Status Message
                         -->
                             <div class="status-message">
                                 <p id="form-status" style="display: none;"></p>

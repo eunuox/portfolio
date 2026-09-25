@@ -1,3 +1,9 @@
+> **⚠️ Portfolio transition:** The portfolio is moving to a new domain and codebase under the **@eunuox** identity.
+>
+> 🔗 **Latest version:** [**eunuox/eunuox.com**](https://github.com/eunuox/eunuox.com)
+>
+> This repository remains available for the current **@xodivorce** portfolio and may continue to receive updates during the transition.
+
 ## Xodivorce - Portfolio Website: powered by @xodivorce
 
 ### 👀 Preview:
@@ -5,16 +11,16 @@
 
 ### Official Portfolio Website of Prasid Mandal - Full-Stack Web Developer - (Also Known as @xodivorce).
 
-[![status](https://img.shields.io/badge/status-active-brightgreen.svg?style=flat)](https://github.com/xodivorce/portfolio)
-[![version](https://img.shields.io/badge/version-v1.2.4-yellow.svg?style=flat)](https://github.com/xodivorce/portfolio)
-[![PRs](https://img.shields.io/badge/PRs-welcome-blue.svg?style=flat)](https://github.com/xodivorce/portfolio)
+[![status](https://img.shields.io/badge/status-active-brightgreen.svg?style=flat)](https://github.com/eunuox/portfolio)
+[![version](https://img.shields.io/badge/version-v1.2.4-yellow.svg?style=flat)](https://github.com/eunuox/portfolio)
+[![PRs](https://img.shields.io/badge/PRs-welcome-blue.svg?style=flat)](https://github.com/eunuox/portfolio)
 
 > **🥰 Like this project? Please consider giving it a Star (🌟) on GitHub to show us your appreciation. Thank you!**
 
 ### 🧩 Offical Repositories
 
-[![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/xodivorce/portfolio)
-[![Gitea](https://img.shields.io/badge/Gitea-34495E?style=for-the-badge&logo=gitea&logoColor=5D9425)](https://gitea.neosubhamoy.com/xodivorce/portfolio)
+[![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/eunuox/portfolio)
+[![Gitea](https://img.shields.io/badge/Gitea-34495E?style=for-the-badge&logo=gitea&logoColor=5D9425)](https://gitea.neosubhamoy.com/eunuox/portfolio)
 
 ### ⚡️ Technologies Used
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
@@ -35,9 +41,9 @@ Want to get started quickly? Follow the instructions below to install and run th
    - Clone the repository to your local machine:
      ```bash
      # Clone using SSH
-     git clone git@github.com:xodivorce/portfolio.git
+     git clone git@github.com:eunuox/portfolio.git
      # Or using HTTPS
-     git clone https://github.com/xodivorce/portfolio.git
+     git clone https://github.com/eunuox/portfolio.git
      ```
 
 2. **Install dependencies**
@@ -53,7 +59,7 @@ Want to get started quickly? Follow the instructions below to install and run th
      npm install
      ```
 
-3. **Configure Environment & Database**
+3. **Configure Environment**
    - Set up your `.env` file based on `.env.example` file.
 
    - Generate application key:
@@ -61,12 +67,7 @@ Want to get started quickly? Follow the instructions below to install and run th
      # Using Terminal
      php artisan key:generate
      ```
-     
-   - Run migrations and seed data:
-     ```bash
-     # Using Terminal
-     php artisan migrate --seed
-     ```
+
 
 4. **Run using Docker (recommended)**
    - Make sure `Docker` is installed, then run:
@@ -80,8 +81,15 @@ Want to get started quickly? Follow the instructions below to install and run th
      composer run dev
      ```
 
+5. **Configure Database**
+   - Run migrations and seed data:
+     ```bash
+     # Using Terminal
+     php artisan migrate --seed
+     ```
+
 🐞 **Got Ideas or Spotted a Bug?**   
-Don’t be shy! [*Open an issue*](https://github.com/xodivorce/portfolio/issues) to discuss new features, enhancements, or any bugs you find. Your feedback is golden!!
+Don’t be shy! [*Open an issue*](https://github.com/eunuox/portfolio/issues) to discuss new features, enhancements, or any bugs you find. Your feedback is golden!!
 
 > <strong>⚠️ Frequently Asked Questions:</strong>
 > <ul>
@@ -95,7 +103,7 @@ Don’t be shy! [*Open an issue*](https://github.com/xodivorce/portfolio/issues)
 
 Xodivorce - Portfolio Website is a fully open sourced project licensed under the [**MIT LICENSE**](LICENSE.txt), but still some parts of this website are not allowed to use or distribute without proper permission or attribution. All the contents (eg: all informations of portfolio, resume, projects, blog, contact) published in this website and the visual components (eg: layout, design, animations, images, graphics) used in this website are not covered under the MIT License and requires special permission to be used. Using these without prior permission will cause legal actions.
 
-> 🧠 Follow me on [Instagram](https://www.instagram.com/xodivorce) or check out more projects at [xodivorce.in](https://www.xodivorce.in)
+> 🧠 Follow me on [Instagram](https://www.instagram.com/eunuox) or check out more projects at [xodivorce.in](https://www.xodivorce.in)
 
 <br></br>
 

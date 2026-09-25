@@ -54,8 +54,8 @@
     <meta name="twitter:description" content="{{ $errorDescription }}">
     <meta name="twitter:image" content="{{ asset('assets/images/user/xodivorce.jpg') }}">
     <meta name="twitter:url" content="{{ url()->current() }}">
-    <meta name="twitter:creator" content="@hey_xodivorce">
-    <meta name="twitter:site" content="@hey_xodivorce">
+    <meta name="twitter:creator" content="@eunuo_x">
+    <meta name="twitter:site" content="@eunuo_x">
 
     <!--
     - #Canonical URL

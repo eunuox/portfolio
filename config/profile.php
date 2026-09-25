@@ -18,15 +18,15 @@ return [
 
     'socials' => [
 
-        'github' => 'https://github.com/xodivorce',
-        'linkedin' => 'https://www.linkedin.com/in/xodivorce',
-        'facebook' => 'https://www.facebook.com/xodivorce',
-        'gravatar' => 'https://gravatar.com/xodivorce',
-        'instagram' => 'https://www.instagram.com/xodivorce',
-        'youtube' => 'https://www.youtube.com/@xodivorce',
-        'x' => 'https://x.com/hey_xodivorce',
-        'pinterest' => 'https://www.pinterest.com/xodivorc3',
-        'npm' => 'https://www.npmjs.com/~xodivorce',
+        'github' => 'https://github.com/eunuox',
+        'linkedin' => 'https://www.linkedin.com/in/eunuox',
+        'facebook' => 'https://www.facebook.com/eunuo_x',
+        'gravatar' => 'https://gravatar.com/eunuo_x',
+        'instagram' => 'https://www.instagram.com/eunuo_x',
+        'youtube' => 'https://www.youtube.com/@eunuo_x',
+        'x' => 'https://x.com/eunuo_x',
+        'pinterest' => 'https://www.pinterest.com/eunuo_x',
+        'npm' => 'https://www.npmjs.com/~eunuox',
         'google_developer' => 'https://me.developers.google.com/u/103271565911786362406',
 
     ],

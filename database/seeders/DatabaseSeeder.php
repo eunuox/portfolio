@@ -30,6 +30,18 @@ class DatabaseSeeder extends Seeder
         //Testimonial::factory(3)->create();
         Testimonial::insert([
             [
+                'name' => 'Jesim Aiman',
+                'avatar' => 'assets/images/avatars/avatar-2.png',
+                'message' => 'Seeing this kind of growth in just two months has been incredible — from National Rank #115 to #59 among 10,000+ Google Gemini Student Ambassadors. Prasid has shown remarkable consistency, dedication, and active contribution throughout the program, making his progress truly stand out.',
+                'date' => '2026-08-17'
+            ],
+            [
+                'name' => 'Sandeep Jain',
+                'avatar' => 'assets/images/avatars/avatar-4.png',
+                'message' => 'It has been great to see Prasid’s enthusiasm and consistency throughout his journey with GeeksforGeeks. His active involvement, dedication, and efforts as a Campus Mantri have truly stood out, and we’re glad to have him as part of the community.',
+                'date' => '2026-02-20'
+            ],
+            [
                 'name' => 'AutoSquare Store',
                 'avatar' => 'assets/images/avatars/avatar-1.png',
                 'message' => 'We recently came across your GitHub profile and were truly impressed by your skills and projects. We think you could be a fantastic addition to our team at AutoSquare as a Full Stack Software Engineer.',
@@ -88,13 +100,13 @@ class DatabaseSeeder extends Seeder
             [
                 'title' => "Google Gemini Student Ambassador '26",
                 'start_year' => 2026,
-                'end_year' => null,
+                'end_year' => 2026,
                 'description' => 'Selected as a Google Gemini Student Ambassador, representing Google Gemini and developer initiatives within the student community. Organizing workshops, technical sessions, and campus activities while helping students explore modern technologies, AI tools, and developer resources.'
             ],
             [
                 'title' => "GirlScript Summer of Code '26",
                 'start_year' => 2026,
-                'end_year' => null,
+                'end_year' => 2026,
                 'description' => 'Contributing to open-source projects as part of GirlScript Summer of Code 2026 (GSSoC). Collaborating with maintainers and contributors, improving real-world projects, and gaining hands-on experience with modern development workflows and Git-based collaboration.'
             ],
             [
@@ -447,13 +459,13 @@ class DatabaseSeeder extends Seeder
                     'updated_at' => now()
                 ],
                 [
-                    'post_link' => 'https://www.instagram.com/p/DMGQhIeyID4/',
+                    'post_link' => 'https://www.instagram.com/p/C_yaQx7TEa7/',
                     'post_image' => '',
                     'post_image_alt' => 'Santiniketan 🧩',
                     'post_category' => 'Instagram',
                     'post_date' => '2024-09-10',
                     'post_title' => 'Santiniketan 🧩',
-                    'post_text' => "Explored Santiniketan tourist spots. Although the adventure is awesome, must try at least once in a life.",
+                    'post_text' => "Explored Santiniketan, stayed at OYO Green Chillies 🌶️, explored Santiniketan tourist spots. Although the adventure is awesome, must try at least once in a life 🍀.",
                     'platform' => 'Instagram',
                     'post_iframe' => null,
                     'created_at' => now(),
@@ -577,7 +589,6 @@ class DatabaseSeeder extends Seeder
                     'updated_at' => now()
                 ],
                 [
-
                     'post_link' => 'https://www.instagram.com/reel/DPf6IlmkbZk/',
                     'post_image' => null,
                     'post_image_alt' => 'Yeah, we changed 🥀',
@@ -593,37 +604,11 @@ class DatabaseSeeder extends Seeder
                 [
                     'post_link' => 'https://www.instagram.com/reel/DRm9id_kgOY/',
                     'post_image' => null,
-                    'post_image_alt' => '日本利用压电瓷砖将脚步转化...',
-                    'post_category' => 'Instagram',
-                    'post_date' => '2025-11-28',
-                    'post_title' => '日本利用压电瓷砖将脚步转化...',
-                    'post_text' => "I tried using this prompt purely for virality - and yeah, it worked. 🚀 We crossed 4.5M+ views ⚡️.",
-                    'platform' => 'Instagram',
-                    'post_iframe' => null,
-                    'created_at' => now(),
-                    'updated_at' => now()
-                ],
-                [
-                    'post_link' => 'https://www.instagram.com/reel/DSeh4BvkoEN/',
-                    'post_image' => null,
                     'post_image_alt' => '日本利用压电瓷砖将脚步转化为...',
                     'post_category' => 'Instagram',
                     'post_date' => '2025-12-20',
                     'post_title' => '日本利用压电瓷砖将脚步转化为...',
-                    'post_text' => "I tried a second time using this prompt purely for virality - and this time, it didn’t work 😔.",
-                    'platform' => 'Instagram',
-                    'post_iframe' => null,
-                    'created_at' => now(),
-                    'updated_at' => now()
-                ],
-                [
-                    'post_link' => 'https://www.instagram.com/reel/DSkPhNBEZbN/',
-                    'post_image' => null,
-                    'post_image_alt' => 'Recap \'25 ⏳',
-                    'post_category' => 'Instagram',
-                    'post_date' => '2025-12-22',
-                    'post_title' => 'Recap \'25 ⏳',
-                    'post_text' => "POV: 2025 is about to end - and this is your recap. The moments, the lessons, the wins, and everything in between. ✨",
+                    'post_text' => "I tried a second time using this prompt purely for virality - and this time, it works 😛.",
                     'platform' => 'Instagram',
                     'post_iframe' => null,
                     'created_at' => now(),
@@ -663,32 +648,6 @@ class DatabaseSeeder extends Seeder
                     'post_date' => '2026-02-07',
                     'post_title' => 'Last night, unforgettable 🎸',
                     'post_text' => "Last night was unforgettable - attending the KEI Alumni event as an ex-student. Pure vibes, great music, and moments that stay with you. Huge love to @fakiramusic for making it special 🎶✨.",
-                    'platform' => 'Instagram',
-                    'post_iframe' => null,
-                    'created_at' => now(),
-                    'updated_at' => now()
-                ],
-                [
-                    'post_link' => 'https://www.instagram.com/p/DVjPepLkl5C/',
-                    'post_image' => null,
-                    'post_image_alt' => 'She’s the colour :)',
-                    'post_category' => 'Instagram',
-                    'post_date' => '2026-03-20',
-                    'post_title' => 'She’s the colour :)',
-                    'post_text' => "When she becomes your colour, and you start painting your life with her interests 🎨✨.",
-                    'platform' => 'Instagram',
-                    'post_iframe' => null,
-                    'created_at' => now(),
-                    'updated_at' => now()
-                ],
-                [
-                    'post_link' => 'https://www.instagram.com/p/DWrYsG6ki-5/',
-                    'post_image' => null,
-                    'post_image_alt' => 'You just need a haircut! 🫪',
-                    'post_category' => 'Instagram',
-                    'post_date' => '2026-04-05',
-                    'post_title' => 'You just need a haircut! 🫪',
-                    'post_text' => "Visited Zudio, Basirhat for a quick outing 🛍️✨ - had a little fun, tried some fits, and clicked a few mirror selfies 📸🪞. Just one of those simple days that feels good.",
                     'platform' => 'Instagram',
                     'post_iframe' => null,
                     'created_at' => now(),
@@ -786,19 +745,6 @@ class DatabaseSeeder extends Seeder
                     'updated_at' => now()
                 ],
                 [
-                    'post_link' => 'https://www.instagram.com/reel/DY0MfF4zDad/',
-                    'post_image' => null,
-                    'post_image_alt' => 'Building With Gemini',
-                    'post_category' => 'Instagram',
-                    'post_date' => '2026-05-26',
-                    'post_title' => 'Building Thoughts With Gemini 💙✨',
-                    'post_text' => 'From coding to creativity, Gemini has become part of my daily workflow. Helping me learn faster, think deeper, and turn ideas into reality one prompt at a time. 💙✨',
-                    'platform' => 'Instagram',
-                    'post_iframe' => null,
-                    'created_at' => now(),
-                    'updated_at' => now()
-                ],
-                [
                     'post_link' => 'https://www.instagram.com/p/DYwbjbiEpiV/',
                     'post_image' => null,
                     'post_image_alt' => 'KKR vs DC at Eden Gardens',
@@ -849,7 +795,215 @@ class DatabaseSeeder extends Seeder
                     'post_iframe' => null,
                     'created_at' => now(),
                     'updated_at' => now()
-                ]
+                ],
+                [
+                    'post_link' => 'https://www.instagram.com/p/DFUgCTByc4z/?img_index=1',
+                    'post_image' => null,
+                    'post_image_alt' => 'I’m burning alive... 🪻✨',
+                    'post_category' => 'Instagram',
+                    'post_date' => '2025-01-27',
+                    'post_title' => 'I’m burning alive... 🪻✨',
+                    'post_text' => 'A little chaos, a little nostalgia, and a moment 📸 worth keeping. Some memories just hit differently. Click to view on Instagram!',
+                    'platform' => 'Instagram',
+                    'post_iframe' => null,
+                    'created_at' => now(),
+                    'updated_at' => now()
+                ],
+                [
+                    'post_link' => 'https://www.instagram.com/p/DbFioZrkt_J/?img_index=1',
+                    'post_image' => '',
+                    'post_image_alt' => 'The Winner Takes It All 🎧',
+                    'post_category' => 'Instagram',
+                    'post_date' => '2026-07-22',
+                    'post_title' => 'The Winner Takes It All 🎧',
+                    'post_text' => 'Always been a loser. 🎧 ABBA, late-night thoughts, and a little too much nostalgia. 🖤 Sometimes the quietest moments carry the loudest memories. Just me, some music, and a feeling that somehow stays a little longer than it should. 🌙',
+                    'platform' => 'Instagram',
+                    'post_iframe' => null,
+                    'created_at' => now(),
+                    'updated_at' => now()
+                ],
+                [
+                    'post_link' => 'https://www.instagram.com/p/DdgmD8xknos/?img_index=1',
+                    'post_image' => '',
+                    'post_image_alt' => 'L’Italia si riconosce nei dettagli. 🇮🇹',
+                    'post_category' => 'Instagram',
+                    'post_date' => '2026-09-20',
+                    'post_title' => 'L’Italia si riconosce nei dettagli. 🇮🇹',
+                    'post_text' => 'L’Italia si riconosce nei dettagli. Pane italiano, tostato come si deve. Un morso, un sorriso e quell’eleganza bianco e nero che sa di una nuova era. Grazie, @subway_india, per questo piccolo assaggio d’Italia. Forza Ferrari, sempre. 🇮🇹',
+                    'platform' => 'Instagram',
+                    'post_iframe' => null,
+                    'created_at' => now(),
+                    'updated_at' => now()
+                ],
+                [
+                    'post_link' => 'https://www.instagram.com/reel/DVcPmSeEuWv/',
+                    'post_image' => '',
+                    'post_image_alt' => '500 Miles - Peter, Paul and Mary 🎵',
+                    'post_category' => 'Instagram',
+                    'post_date' => '2026-03-05',
+                    'post_title' => '500 Miles - Peter, Paul and Mary 🎵',
+                    'post_text' => 'Based on a true story. 🎵 Sometimes a song says what words can’t. 500 Miles by Peter, Paul and Mary — one of those songs that stays with you. ✨',
+                    'platform' => 'Instagram',
+                    'post_iframe' => null,
+                    'created_at' => now(),
+                    'updated_at' => now()
+                ],
+                [
+                    'post_link' => 'https://www.instagram.com/reel/DZ5r0LWSAKh/',
+                    'post_image' => '',
+                    'post_image_alt' => 'If Only... 😭',
+                    'post_category' => 'Instagram',
+                    'post_date' => '2026-06-23',
+                    'post_title' => 'If Only... 😭',
+                    'post_text' => 'That handsome hota toh koi mere liye bhi is audio pe reel banata... 😭 Some reels are just too relatable to scroll past. 🫠',
+                    'platform' => 'Instagram',
+                    'post_iframe' => null,
+                    'created_at' => now(),
+                    'updated_at' => now()
+                ],
+                [
+    'post_link' => 'https://www.instagram.com/reel/DZ-HEQsyO4N/',
+    'post_image' => '',
+    'post_image_alt' => 'Laptop selfie le leta hu, cool lagunga. 😂',
+    'post_category' => 'Instagram',
+    'post_date' => '2026-06-25',
+    'post_title' => 'Laptop Selfie 😂',
+    'post_text' => 'Laptop selfie le leta hu, cool lagunga. 😂 Sometimes the most random ideas actually make the best reels. ✨',
+    'platform' => 'Instagram',
+    'post_iframe' => null,
+    'created_at' => now(),
+    'updated_at' => now()
+],
+[
+    'post_link' => 'https://www.instagram.com/reel/DaclIDkSy0h/',
+    'post_image' => '',
+    'post_image_alt' => 'I grew up watching Honey Singh 👑',
+    'post_category' => 'Instagram',
+    'post_date' => '2026-07-08',
+    'post_title' => 'I Grew Up Watching Honey Singh 👑',
+    'post_text' => 'I grew up watching Honey Singh. 👑 From those old-school hits to seeing how far the sound has come, some artists just become part of your growing-up years. 🎶✨',
+    'platform' => 'Instagram',
+    'post_iframe' => null,
+    'created_at' => now(),
+    'updated_at' => now()
+],
+[
+    'post_link' => 'https://www.instagram.com/reel/DbIRbEAS-SU/',
+    'post_image' => '',
+    'post_image_alt' => 'She has the long hair. 🖤',
+    'post_category' => 'Instagram',
+    'post_date' => '2026-07-23',
+    'post_title' => 'She Has The Long Hair. 🖤',
+    'post_text' => 'I don’t have long hair, but she does. 🖤 And honestly, it looks better on her. 🌙',
+    'platform' => 'Instagram',
+    'post_iframe' => null,
+    'created_at' => now(),
+    'updated_at' => now()
+],
+[
+    'post_link' => 'https://www.instagram.com/reel/DbJgev-y-iX/',
+    'post_image' => '',
+    'post_image_alt' => 'My red and white side. ❤️🤍',
+    'post_category' => 'Instagram',
+    'post_date' => '2026-07-24',
+    'post_title' => 'My Red And White Side ❤️🤍',
+    'post_text' => 'My red and white side. ❤️🤍 A little glimpse of my Bengali side, wrapped in the colours, mood, and feeling that always feel like home. 🌙',
+    'platform' => 'Instagram',
+    'post_iframe' => null,
+    'created_at' => now(),
+    'updated_at' => now()
+],
+[
+    'post_link' => 'https://www.instagram.com/reel/DbJh8EUz6p2/',
+    'post_image' => '',
+    'post_image_alt' => 'My red and white side. ❤️🤍',
+    'post_category' => 'Instagram',
+    'post_date' => '2026-07-24',
+    'post_title' => 'My Red And White Side ❤️🤍',
+    'post_text' => 'My red and white side. ❤️🤍 The other side of the story — the colours, the vibe, and a little Bengali touch that feels like home. 🌹✨',
+    'platform' => 'Instagram',
+    'post_iframe' => null,
+    'created_at' => now(),
+    'updated_at' => now()
+],
+[
+    'post_link' => 'https://www.instagram.com/reel/DbLZluVy7ze/',
+    'post_image' => '',
+    'post_image_alt' => 'Did you ever mention her in your story.. 🖤',
+    'post_category' => 'Instagram',
+    'post_date' => '2026-07-25',
+    'post_title' => 'Did You Ever Mention Her? 🖤',
+'post_text' => 'I don’t really talk about her much. I just mention her in my prayers 🖤🌙; click to view on Instagram.',
+    'platform' => 'Instagram',
+    'post_iframe' => null,
+    'created_at' => now(),
+    'updated_at' => now()
+],
+[
+    'post_link' => 'https://www.instagram.com/reel/DbOh6bdyjwN/',
+    'post_image' => '',
+    'post_image_alt' => 'Kitne psnd karte ho usko? 🖤',
+    'post_category' => 'Instagram',
+    'post_date' => '2026-07-26',
+    'post_title' => 'Kitne Pasand Karte Ho Usko? 🖤',
+'post_text' => 'Kitna pasand karta hoon usko? 🖤 Shayad itna ki deewangi ki had bhi chhoti lagne lage 🌙; click to view on Instagram.',
+    'platform' => 'Instagram',
+    'post_iframe' => null,
+    'created_at' => now(),
+    'updated_at' => now()
+],
+[
+    'post_link' => 'https://www.instagram.com/reel/DbRZzY7MU03/',
+    'post_image' => '',
+    'post_image_alt' => 'Me and bro after that one relationship. 🫂',
+    'post_category' => 'Instagram',
+    'post_date' => '2026-07-27',
+    'post_title' => 'Me & Bro After That One Relationship. 😂',
+    'post_text' => 'Me and bro after that one relationship. 😂 Some things are better left in the past — especially when you have your bro to laugh about them with. 🫂',
+    'platform' => 'Instagram',
+    'post_iframe' => null,
+    'created_at' => now(),
+    'updated_at' => now()
+],
+[
+    'post_link' => 'https://www.instagram.com/reel/DbVNJAHyC1M/',
+    'post_image' => '',
+    'post_image_alt' => 'Jisko meri pasandida aurat bina kuch kiye mil jaayegi.. 🖤',
+    'post_category' => 'Instagram',
+    'post_date' => '2026-07-28',
+    'post_title' => 'Jisko Meri Pasandida Aurat Mil Jaayegi.. 🖤',
+    'post_text' => 'Jisko meri pasandida aurat bina kuch kiye mil jaayegi.. 🖤 Bas soch ke hi ajeeb sa lagta hai. 🙂',
+    'platform' => 'Instagram',
+    'post_iframe' => null,
+    'created_at' => now(),
+    'updated_at' => now()
+],
+[
+    'post_link' => 'https://www.instagram.com/reel/DbWZPYvSNrd/',
+    'post_image' => '',
+    'post_image_alt' => 'Having a heavy heart. 🖤',
+    'post_category' => 'Instagram',
+    'post_date' => '2026-07-29',
+    'post_title' => 'Having A Heavy Heart. 🖤',
+    'post_text' => '1kg is still 1kg, but somehow a heavy heart feels a lot heavier 🖤; click to view on Instagram.',
+    'platform' => 'Instagram',
+    'post_iframe' => null,
+    'created_at' => now(),
+    'updated_at' => now()
+],
+[
+    'post_link' => 'https://www.instagram.com/reel/DbWZUq-TjgI/',
+    'post_image' => '',
+    'post_image_alt' => 'Having a heavy heart. 🖤',
+    'post_category' => 'Instagram',
+    'post_date' => '2026-07-29',
+    'post_title' => 'Having A Heavy Heart. 🖤',
+    'post_text' => '1kg is still 1kg, but somehow a heavy heart feels a lot heavier 🖤; click to view on Instagram.',
+    'platform' => 'Instagram',
+    'post_iframe' => null,
+    'created_at' => now(),
+    'updated_at' => now()
+],
             ]
         );
     }

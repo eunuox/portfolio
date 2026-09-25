@@ -24,10 +24,11 @@
                 'name' => $profile['name'],
 
                 'alternateName' => [
+                    'eunuox',
                     $profile['username'],
                 ],
 
-                'identifier' => '@' . $profile['username'],
+                'identifier' => '@eunuox',
 
                 'url' => url('/'),
 

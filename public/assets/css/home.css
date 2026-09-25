@@ -592,7 +592,302 @@ main {
 }
 
 /*-----------------------------------*\
-    #ABOUT
+    #BRAND NOTIFICATION
+  \*-----------------------------------*/
+
+#brand-notification {
+    position: relative;
+    width: 100%;
+    height: 55px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    box-sizing: border-box;
+    color: var(--white-1);
+
+    background:
+        radial-gradient(
+            ellipse 32% 180% at 0% 50%,
+            rgba(0, 132, 255, 0.55) 0%,
+            rgba(0, 82, 180, 0.22) 35%,
+            rgba(8, 18, 35, 0) 75%
+        ),
+        radial-gradient(
+            ellipse 32% 180% at 100% 50%,
+            rgba(0, 132, 255, 0.55) 0%,
+            rgba(0, 82, 180, 0.22) 35%,
+            rgba(8, 18, 35, 0) 75%
+        ),
+        #0e182c;
+
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.09);
+
+    box-shadow:
+        inset 0 1px 0 rgba(255, 255, 255, 0.025),
+        0 3px 10px rgba(0, 0, 0, 0.12);
+}
+
+#brand-notification.is-hidden {
+    transform: translateY(-100%);
+}
+
+#brand-notification .brand-announcement-content {
+    display: flex;
+    align-items: center;
+
+    width: max-content;
+    margin: 0 auto;
+
+    font-size: 16px;
+    font-weight: var(--fw-300);
+    line-height: 1;
+
+    white-space: nowrap;
+}
+
+#brand-notification .brand-announcement-row {
+    display: flex;
+    align-items: center;
+}
+
+#brand-notification .brand-announcement-label {
+    color: var(--vegas-gold);
+    font-weight: var(--fw-500);
+    white-space: nowrap;
+}
+
+#brand-notification .brand-arrow {
+    margin: 0 28px;
+
+    color: var(--white-1);
+    font-size: 20px;
+    font-weight: var(--fw-300);
+
+    white-space: nowrap;
+}
+
+#brand-notification .brand-divider {
+    display: inline-flex;
+}
+
+#brand-notification .brand-announcement-transition {
+    display: inline-flex;
+    align-items: center;
+
+    gap: 5px;
+
+    color: rgba(255, 255, 255, 0.88);
+    font-weight: var(--fw-300);
+    letter-spacing: -0.015em;
+
+    white-space: nowrap;
+}
+
+#brand-notification .highlight-text-white,
+#brand-notification .highlight-text-cyan {
+    font-weight: var(--fw-500);
+    white-space: nowrap;
+}
+
+#brand-notification .highlight-text-white {
+    color: var(--white-1);
+}
+
+#brand-notification .highlight-text-cyan {
+    color: var(--vegas-gold);
+}
+
+#brand-notification .brand-announcement-domain {
+    display: inline-flex;
+    align-items: center;
+
+    gap: 4px;
+
+    color: rgba(255, 255, 255, 0.88);
+    font-weight: var(--fw-300);
+    letter-spacing: -0.01em;
+
+    white-space: nowrap;
+}
+
+#brand-notification .brand-announcement-date {
+    color: var(--white-1);
+    font-weight: var(--fw-300);
+    letter-spacing: -0.01em;
+
+    white-space: nowrap;
+}
+
+@media (max-width: 1024px) {
+
+    #brand-notification {
+        height: 55px;
+    }
+
+    #brand-notification .brand-announcement-content {
+        font-size: 14px;
+    }
+
+    #brand-notification .brand-arrow {
+        margin: 0 18px;
+        font-size: 18px;
+    }
+
+    #brand-notification .brand-announcement-transition {
+        gap: 4px;
+    }
+
+    #brand-notification .brand-announcement-domain {
+        gap: 3px;
+    }
+
+    #brand-notification .brand-divider {
+        display: inline-flex;
+    }
+}
+
+@media (max-width: 880px) {
+
+    #brand-notification {
+        height: auto;
+        min-height: 76px;
+
+        padding: 9px 16px;
+
+        box-sizing: border-box;
+    }
+
+    #brand-notification .brand-announcement-content {
+        width: 100%;
+        max-width: 100%;
+
+        margin: 0;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        gap: 7px;
+
+        font-size: 13px;
+        line-height: 1.2;
+
+        white-space: normal;
+    }
+
+    #brand-notification .brand-announcement-row {
+        width: 100%;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        gap: 8px;
+
+        white-space: nowrap;
+    }
+
+    #brand-notification .brand-divider {
+        display: none;
+    }
+
+    #brand-notification .brand-arrow {
+        margin: 0 3px;
+
+        font-size: 17px;
+        font-weight: var(--fw-300);
+    }
+
+    #brand-notification .brand-announcement-transition {
+        display: inline-flex;
+        align-items: center;
+
+        gap: 4px;
+
+        white-space: nowrap;
+    }
+
+    #brand-notification .brand-announcement-domain {
+        display: inline-flex;
+        align-items: center;
+
+        gap: 4px;
+
+        white-space: nowrap;
+    }
+
+    #brand-notification .brand-announcement-date {
+        white-space: nowrap;
+    }
+}
+
+@media (max-width: 480px) {
+
+    #brand-notification {
+        min-height: 72px;
+
+        padding: 8px 10px;
+    }
+
+    #brand-notification .brand-announcement-content {
+        font-size: 12px;
+        gap: 5px;
+    }
+
+    #brand-notification .brand-announcement-row {
+        gap: 6px;
+    }
+
+    #brand-notification .brand-arrow {
+        margin: 0 2px;
+        font-size: 15px;
+    }
+
+    #brand-notification .brand-announcement-transition {
+        gap: 3px;
+    }
+
+    #brand-notification .brand-announcement-domain {
+        gap: 3px;
+    }
+}
+
+@media (max-width: 360px) {
+
+    #brand-notification {
+        min-height: 70px;
+
+        padding: 7px 8px;
+    }
+
+    #brand-notification .brand-announcement-content {
+        font-size: 11px;
+        gap: 4px;
+    }
+
+    #brand-notification .brand-announcement-row {
+        gap: 5px;
+    }
+
+    #brand-notification .brand-arrow {
+        margin: 0 1px;
+        font-size: 14px;
+    }
+
+    #brand-notification .brand-announcement-transition {
+        gap: 2px;
+    }
+
+    #brand-notification .brand-announcement-domain {
+        gap: 2px;
+    }
+}
+/*-----------------------------------*\
+    #Portfolio
   \*-----------------------------------*/
 
 .about .article-title {
@@ -1374,46 +1669,6 @@ main {
     #META ISUUE NOTIFICATION
   \*-----------------------------------*/
 
-.notification {
-    background-color: #0e182c;
-    color: hsl(0, 0%, 100%);
-    padding: 30px;
-    text-align: center;
-    font-size: 12.5px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 999;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    display: block;
-    opacity: 0;
-    visibility: hidden;
-    transition:
-        opacity 2s ease,
-        visibility 1s 3s;
-}
-
-.notification.show {
-    opacity: 1;
-    visibility: visible;
-    transition:
-        opacity 2s ease,
-        visibility 1s 3s;
-}
-
-.highlight-text {
-    color: #37bdf9;
-    font-weight: bold;
-    display: inline-block;
-}
-
-.notification p {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-
 .close-btn {
     position: absolute;
     top: 5px;
@@ -1678,7 +1933,7 @@ textarea.form-input::-webkit-resizer {
      */
 
     main {
-        margin-top: 60px;
+        margin-top: 25px;
         margin-bottom: 100px;
     }
 
