@@ -10,7 +10,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description"
-        content="{{ 'Official Portfolio Website of Prasid Mandal - Full-Stack Web Developer - (Also Known as @' . config('app.name') . ').' }}">
+        content="{{ 'Official Portfolio Website of Prasid Mandal (@eunuo_x) - Full-Stack Web Developer - Formerly @' . config('app.name') . '.' }}">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <!--
@@ -20,7 +20,7 @@
     @php
 
         $errorTitle = $message . ' | @' . config('app.name');
-        $errorDescription = $message . ' — Sorry About That. Feel Free to Head Back to the Homepage of @' . config('app.name') . '.';
+        $errorDescription = $message . ' — Sorry About That. Feel Free to Head Back to the Homepage of @' . config('app.name') . ' (@eunuo_x).';
 
     @endphp
 

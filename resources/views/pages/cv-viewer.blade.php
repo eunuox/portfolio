@@ -10,7 +10,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description"
-    content="{{ 'Official Portfolio Website of Prasid Mandal - Full-Stack Web Developer - (Also Known as @' . config('app.name') . ').' }}">
+        content="{{ 'Official Portfolio Website of Prasid Mandal (@eunuo_x) - Full-Stack Web Developer - Formerly @' . config('app.name') . '.' }}">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
   <!--
@@ -20,7 +20,7 @@
   @php
 
     $cvTitle = 'Curriculum Vitae | @' . config('app.name');
-    $cvDescription = 'Explore the CV: cv@' . config('app.name') . ' - A Detailed Look at the Skills, Experience, and Education.';
+    $cvDescription = 'Explore the CV of @eunuo_x, formerly @' . config('app.name') . ' - For a Detailed Look at the Skills, Experience, and Education.';
 
   @endphp
 

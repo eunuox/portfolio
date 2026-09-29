@@ -4,7 +4,11 @@ return [
 
     'name' => 'Prasid Mandal',
 
-    'username' => 'xodivorce',
+    'username' => 'eunuo_x',
+
+    'gaming_username' => 'xodivorce',
+
+    'pronouns' => 'xe/xyr/xem',
 
     'email' => config('mail.from.address'),
 
@@ -23,6 +27,7 @@ return [
         'facebook' => 'https://www.facebook.com/eunuo_x',
         'gravatar' => 'https://gravatar.com/eunuo_x',
         'instagram' => 'https://www.instagram.com/eunuo_x',
+        'instagram_gaming' => 'xodivorce',
         'youtube' => 'https://www.youtube.com/@eunuo_x',
         'x' => 'https://x.com/eunuo_x',
         'pinterest' => 'https://www.pinterest.com/eunuo_x',

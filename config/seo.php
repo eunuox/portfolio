@@ -2,10 +2,11 @@
 
 return [
 
-    'description' =>
-    'Prasid Mandal (@eunuox), formerly known as @xodivorce, is a Full Stack Web Developer, Open Source Contributor, and Technology Enthusiast building modern software applications.',
+    'description' => 'Prasid Mandal (@eunuox) is a Full Stack Web Developer and Open Source Contributor building modern software applications. @xodivorce is now his Gaming Account on Instagram.',
 
     'job_title' => 'Full Stack Web Developer',
+
+    'pronouns' => 'xe/xyr/xem',
 
     'languages' => [
         'English',
@@ -45,7 +46,7 @@ return [
 
         'name' => 'Prasid Mandal | eunuox',
         'description' =>
-        'Official portfolio of Prasid Mandal (@eunuox), formerly known as @xodivorce — a Full Stack Web Developer and Technology Enthusiast building modern software applications.',
+        'Official portfolio of Prasid Mandal (@eunuo_x) — Full Stack Web Developer building modern software applications. @xodivorce is now his Gaming Account on Instagram.',
         'language' => 'en',
 
     ],

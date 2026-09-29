@@ -10,7 +10,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="{{ 'Official Portfolio Website of Prasid Mandal - Full-Stack Web Developer - (Also Known as @' . config('app.name') . ').' }}">
+        content="{{ 'Official Portfolio Website of Prasid Mandal (@eunuo_x) - Full-Stack Web Developer - Formerly @' . config('app.name') . '.' }}">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <!--
@@ -29,16 +29,13 @@
     ];
     $ogDescriptions = [
     'about' =>
-    'Official Portfolio Website of Prasid Mandal - Full-Stack Web Developer - (Also Known as @' .
+    'Official Portfolio Website of Prasid Mandal (@eunuo_x) - Full-Stack Web Developer - Formerly @' .
     config('app.name') .
-    ').',
-    'resume' =>
-    'Explore the Resume: cv@' .
-    config('app.name') .
-    ' - A Quick Look at My Education, Experience, and Skills.',
+    '.',
+    'resume' => 'Explore the Resume of @eunuo_x, formerly @' . config('app.name') . ' - A Quick Look at My Education, Experience, and Skills.',
     'projects' => 'Browse the Projects - A Quick Overview of My Work, Tools, and Real-World Applications.',
-    'blog' => 'Read the Blogs Shared by ' . config('app.name') . ' on Social Media, Development and Tech.',
-    'contact' => 'Get in Touch with ' . config('app.name') . ' - for Collaborations, Projects, or Queries.',
+    'blog' => 'Read the Blogs Shared by @eunuo_x, formerly @' . config('app.name') . ' on Social Media, Development and Tech.',
+    'contact' => 'Get in Touch with @eunuo_x, formerly @' . config('app.name') . ' - for Collaborations, Projects, or Queries.',
     ];
     $homeTitle = $titles[$currentPage] . ' | @' . config('app.name');
 
